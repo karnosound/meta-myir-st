@@ -25,4 +25,5 @@ CORE_IMAGE_EXTRA_INSTALL += " \
     ${@bb.utils.contains('COMBINED_FEATURES', 'optee', 'packagegroup-optee-test', '', d)}   \
     socat \
     rust-hello-world \
+    sepia-host \
     "
