@@ -26,4 +26,5 @@ CORE_IMAGE_EXTRA_INSTALL += " \
     socat \
     rust-hello-world \
     sepia-host \
+    host-start \
     "
