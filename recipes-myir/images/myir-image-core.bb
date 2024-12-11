@@ -17,13 +17,12 @@ IMAGE_FEATURES += "\
 #
 CORE_IMAGE_EXTRA_INSTALL += " \
     resize-helper \
-    \
     packagegroup-framework-core-base    \
     packagegroup-framework-tools-base   \
-    \
     ${@bb.utils.contains('COMBINED_FEATURES', 'optee', 'packagegroup-optee-core', '', d)}   \
     ${@bb.utils.contains('COMBINED_FEATURES', 'optee', 'packagegroup-optee-test', '', d)}   \
     socat \
+    python3-pyserial \
     rust-hello-world \
     sepia-host \
     "
